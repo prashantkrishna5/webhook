@@ -10,11 +10,9 @@
 	$numbers = $bdy->mbNb;
 	$message = $bdy->txt;
 
-	$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-	fwrite($myfile, $message);
-	fclose($myfile);
 
-	/*
+
+
 	// Authorisation details.
 	$username = "harithsa@inspiredmemories.in";
 	$hash = "0267b5a17f7544db17de3831f8e1f16f550df6877cbaacb292583b1127a709b7";
@@ -35,5 +33,5 @@
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$result = curl_exec($ch); // This is the result from the API
-	curl_close($ch); */
+	curl_close($ch); 
 ?>
